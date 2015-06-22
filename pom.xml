@@ -7,4 +7,7 @@
 	<packaging>pom</packaging>
 	<name>lang4</name>
 	<description>Reuseable Java Code</description>
+	<modules>
+		<module>lang4-util</module>
+	</modules>
 </project>
