@@ -1,7 +1,7 @@
 /**
  * Copyright (C) 2015 haixiaoyao, Inc. All Rights Reserved.
  */
-package lang4;
+package lang4.util;
 
 import org.apache.commons.lang3.StringUtils;
 

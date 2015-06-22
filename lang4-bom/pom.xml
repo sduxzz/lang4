@@ -7,6 +7,7 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
     <artifactId>lang4-bom</artifactId>
+    <version>${bom.version}</version>
     <packaging>pom</packaging>
     <name>lang4-bom</name>
     <description>Bill Of Materials</description>
@@ -19,6 +20,16 @@
                 <version>1.1.2.RELEASE</version>
                 <type>pom</type>
                 <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.sduxzz.lang4</groupId>
+                <artifactId>lang4-util</artifactId>
+                <version>${util.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.sduxzz.lang4</groupId>
+                <artifactId>lang4-validator</artifactId>
+                <version>${validator.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
