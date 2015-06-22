@@ -1,5 +1,16 @@
 *.class
 
+*.~
+
+# Folder and file for eclipe
+.settings
+.classpath
+.project
+
+# Maven target folder
+target/
+logs/
+
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
 
