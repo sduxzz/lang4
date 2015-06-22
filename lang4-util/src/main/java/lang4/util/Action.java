@@ -1,7 +1,7 @@
 /**
  * Copyright (C) 2015 haixiaoyao, Inc. All Rights Reserved.
  */
-package lang4;
+package lang4.util;
 
 /**
  * action when loop on string, array, collection, map

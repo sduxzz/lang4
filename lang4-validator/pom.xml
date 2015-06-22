@@ -6,11 +6,11 @@
         <artifactId>lang4</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
-    <artifactId>lang4-util</artifactId>
-    <version>${util.version}</version>
-    <name>lang4 util</name>
-    <description>Commonly used util method</description>
-    
+    <artifactId>lang4-validator</artifactId>
+    <version>${validator.version}</version>
+    <name>validator</name>
+    <description>Validator for checking arguments passed to method</description>
+
     <dependencyManagement>
         <dependencies>
             <dependency>
@@ -25,20 +25,8 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.apache.commons</groupId>
-            <artifactId>commons-lang3</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>commons-collections</groupId>
-            <artifactId>commons-collections</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>commons-logging</groupId>
-            <artifactId>commons-logging</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>log4j</groupId>
-            <artifactId>log4j</artifactId>
+            <groupId>org.sduxzz.lang4</groupId>
+            <artifactId>lang4-util</artifactId>
         </dependency>
     </dependencies>
 
