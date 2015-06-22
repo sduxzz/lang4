@@ -38,13 +38,13 @@ public final class A {
      * after iterating, return true.
      * 
      */
-    public static <T> boolean forEach(T[] array, Action action) {
+    public static <T> boolean forEach(T[] array, Action<T> action) {
         if (A.isEmpty(array)) {
             return false;
         }
         for (int index = 0, n = array.length; index < n; index++) {
             T target = array[index];
-            if (!action.action(target, index)) {
+            if (!action.action(target, index, array)) {
                 return false;
             }
         }
@@ -54,11 +54,10 @@ public final class A {
     /**
      * handle array item one by one except null item
      */
-    public static <T> boolean forEachSkipNull(T[] array, final Action action) {
-        return forEach(array, new Action() {
-
+    public static <T> boolean forEachSkipNull(T[] array, final Action<T> action) {
+        return forEach(array, new Action<T>() {
             @Override
-            public boolean action(Object value, Object...args) {
+            public boolean action(T value, Object...args) {
                 return value != null ? action.action(value, args) : true;
             }
         });

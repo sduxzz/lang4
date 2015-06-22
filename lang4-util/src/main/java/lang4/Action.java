@@ -9,22 +9,23 @@ package lang4;
  * @author xiezhenzong
  *
  */
-public interface Action {
-
+public interface Action<T> {
 
     /**
-     * 当在string, array, collection, map 上循环时，调用action，对每一项进行处理，
+     * 当在array, collection, map 上循环时，调用action，对每一项进行处理，
+     * 
+     * value是需要进行处理的元素
      * 
      * <ol>
-     * <li>在string，array，list上循环时，args第一项是index，第二项是要string, array, list
-     * <li>在set上循环时，args第一项时set
-     * <li>在map上循环时，args第一项时key，第二项时map
+     * <li>在array，list上循环时，args第一项是index，第二项是要array, list
+     * <li>在set上循环时，args第一项是set
+     * <li>在map上循环时，args第一项是key，第二项时map
      * </ol>
      * 
      * 如果不需要继续循环则返回false;
      * 
      * 
      */
-    boolean action(Object value, Object...args);
+    boolean action(T value, Object...args);
 
 }
