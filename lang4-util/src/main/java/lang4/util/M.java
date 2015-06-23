@@ -1,6 +1,3 @@
-/**
- * Copyright (C) 2015 haixiaoyao, Inc. All Rights Reserved.
- */
 package lang4.util;
 
 import java.util.Map;
