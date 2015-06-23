@@ -8,7 +8,7 @@
     </parent>
     <artifactId>lang4-validator</artifactId>
     <version>${validator.version}</version>
-    <name>validator</name>
+    <name>lang4-validator</name>
     <description>Validator for checking arguments passed to method</description>
 
     <dependencyManagement>

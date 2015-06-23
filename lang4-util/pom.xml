@@ -8,7 +8,7 @@
     </parent>
     <artifactId>lang4-util</artifactId>
     <version>${util.version}</version>
-    <name>lang4 util</name>
+    <name>lang4-util</name>
     <description>Commonly used util method</description>
     
     <dependencyManagement>
