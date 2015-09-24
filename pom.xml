@@ -12,11 +12,12 @@
         <module>lang4-util</module>
         <module>lang4-validator</module>
     </modules>
-    
+
     <properties>
         <bom.version>0.0.1-SNAPSHOT</bom.version>
         <util.version>0.0.1-SNAPSHOT</util.version>
         <validator.version>0.0.1-SNAPSHOT</validator.version>
+        <ajax.version>0.0.1-SNAPSHOT</ajax.version>
     </properties>
 
 </project>
